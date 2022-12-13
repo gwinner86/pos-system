@@ -1,56 +1,38 @@
+import { Divider } from '@mui/material';
 import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
 import './App.css';
+import Index from './pages/dashboard/Index';
+import MainSidebar from './pages/sidebar/MainSidebar';
+import Topbar from './pages/topbar/Topbar';
+import {
+  Routes,
+  Route
+} from "react-router-dom";
+import NewProduct from './pages/products/NewProduct';
+import ProductsList from './pages/products/ProductsList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
+    <div className="app">
+           
+         <div className='app__menu'> 
+            <div className='app__sidebar'>
+              <MainSidebar />
+            </div>
+            <div className='app__topbar'>
+              <Topbar />
+
+              <main className='app__body'>
+                  <Routes>
+                  <Route path='/' element={<Index />} />
+                  <Route path='/addproduct' element={<NewProduct />} />
+                  <Route path='/getproducts' element={<ProductsList />} />
+                  </Routes>
+              
+              </main>
+            </div>
+         </div>
+        
     </div>
   );
 }

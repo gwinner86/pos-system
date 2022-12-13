@@ -1,0 +1,27 @@
+.stats-card { 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 25px;
+}
+
+.stats-card:hover > .stats-item-icons {
+  background-color: aquamarine;
+}
+
+.stats-text { 
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color : #fff;
+}
+.stats-text > h3 { 
+   font-size: 20px;
+   font-weight: bold;
+}
+.stats-item-icons { 
+  object-fit: contain;
+  width: 40px !important;
+  height: 40px !important;
+  color: #fff;
+}
