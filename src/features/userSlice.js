@@ -14,10 +14,10 @@ export const userSlice = createSlice({
   },
   // The `reducers` field lets us define reducers and generate associated actions
   reducers: {
-    Login: (state, action) => {
+    login: (state, action) => {
           state.user = action.payload;
     },
-    Logout: (state) => {
+    logout: (state) => {
       state.user = null;
     }
 
@@ -25,7 +25,7 @@ export const userSlice = createSlice({
 })
 
 
-export const { Login, logout } = userSlice.actions;
+export const { login, logout } = userSlice.actions;
 
 export const selectUser = (state) => state.user.user;
 

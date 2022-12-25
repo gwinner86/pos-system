@@ -13,4 +13,8 @@
   align-items: center;
   gap: 20px;
   cursor: pointer;
+  object-fit: contain;
+  height: 20px;
+  width: 20px;
+  margin-left: auto;
 }

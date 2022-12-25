@@ -11,6 +11,7 @@ import PersonAddOutlinedIcon from '@mui/icons-material/PersonAddOutlined'
 import DescriptionOutlinedIcon from '@mui/icons-material/DescriptionOutlined'
 import FileCopyOutlinedIcon from '@mui/icons-material/FileCopyOutlined'
 import DahsboardBarChart from '../../components/DahsboardBarChart'
+import RecentlyAddProduct from '../../components/RecentlyAddProduct'
 
 function Index() {
   return (
@@ -49,13 +50,13 @@ function Index() {
        {/* Row 3 */}
 
             <div className="graph-third-item-first">
-                <h3> Hello </h3>
+                <h3> Purchase & Sales </h3>
                 <DahsboardBarChart />
             </div>
 
             <div className="table-third-item-second">
-                <h2> Scond column</h2>
-                
+                <h3 style={{marginBottom: "10px"}}>Recently Added Products</h3>
+                <RecentlyAddProduct />
             </div>
        </div>
 

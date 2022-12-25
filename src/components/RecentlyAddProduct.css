@@ -1,0 +1,13 @@
+.MuiDataGrid-root { 
+  border: none !important;
+}
+
+/* .MuiDataGrid-cell { 
+  border-bottom: none !important;
+} */
+
+.MuiDataGrid-footerContainer { 
+  /* border-top: none !important;
+  padding-bottom: 20px !important; */
+  display: none !important;
+}

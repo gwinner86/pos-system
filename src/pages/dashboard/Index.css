@@ -37,20 +37,54 @@
 
 .graph-third-item-first { 
   margin-top: 20px;
-  grid-column: span 8;
+  grid-column: span 7;
   box-shadow: 0 4px 5px -3px rgba(0,0,0,0.03);
   background-color: #fff;
   padding:20px;
-  height : 400px;
+  height : 55vh;
   border: 1px solid #E8EBED;
   border-radius: 6px;
 }
 
 .table-third-item-second { 
   margin-top: 20px;
-  grid-column: span 4;
+  grid-column: span 5;
+  height : 55vh;
+  width: 100%;
   padding: 20px;
   box-shadow: 0 4px 5px -3px rgba(0,0,0,0.01);
   background-color: #fff;
   border: 1px solid #E8EBED;
+  border-radius: 6px;
+}
+
+.form-group { 
+  display: flex; 
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.form-control { 
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+ flex: 1;
+}
+.form-control > input { 
+ padding: 12px;
+ border-radius: 5px;
+ border : none;
+ outline: none;
+ border: 1px solid #919eab52 !important;
+}
+.login_register_btn { 
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #00CFE8;
+  color: #fff;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+  margin-top: 20px;
 }

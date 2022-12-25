@@ -6,7 +6,6 @@ import HomeIcon from '@mui/icons-material/Home';
 import  MenuOutlinedIcon  from '@mui/icons-material/MenuOutlined'
 import DashboardIcon from '@mui/icons-material/Dashboard';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
-
 import { Link } from 'react-router-dom';
 
 
@@ -57,6 +56,12 @@ function MainSidebar() {
           />
         
           <SubMenu label="Products" icon={<MenuOutlinedIcon />}>
+          <Item 
+            title="Products List"
+            to="/getproducts"
+            selected={selected}
+            setSelected={setSelected}
+            />
             <Item 
             title="Add Product"
             to="/addproduct"
@@ -64,22 +69,50 @@ function MainSidebar() {
             setSelected={setSelected}
             />
             <Item 
-            title="List of products"
-            to="/getproducts"
+            title="Categories List"
+            to="/getcategories"
             selected={selected}
             setSelected={setSelected}
             />
+            <Item 
+            title="Add Category"
+            to="/addcategory"
+            selected={selected}
+            setSelected={setSelected}
+            />
+            <Item 
+            title="Brands List"
+            to="/getbrands"
+            selected={selected}
+            setSelected={setSelected}
+            />
+
+           <Item 
+            title="Add Brand"
+            to="/addbrand"
+            selected={selected}
+            setSelected={setSelected}
+            />
+
+            {/* addbrand */}
+    
           </SubMenu>
           <SubMenu label="Sales" icon={<ShoppingCartIcon />}>
             <Item
               title="Sales List"
-              to="/sales-list"
+              to="/getsales"
               selected={selected}
               setSelected={setSelected}
              />
-            {/* <MenuItem  onClick={() => setSelected("Sales")}  routerLink={<Link to="test" />} active="true"> Add Sales </MenuItem>
-            <MenuItem  onClick={() => setSelected("Sales")}  routerLink={<Link to="test" />} active="true"> Add Sales </MenuItem>
-           */}
+             <Item
+              title="New Sale"
+              to="/addsale"
+              selected={selected}
+              setSelected={setSelected}
+             />
+
+            {/* <MenuItem  onClick={() => setSelected("Sales")}  routerLink={<Link to="test" />} active="true"> Add Sales </MenuItem> */}
+          
           </SubMenu>
         
         </Menu>

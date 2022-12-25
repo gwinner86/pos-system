@@ -1,0 +1,17 @@
+.header { 
+  display:  flex;
+  flex-direction: column;
+  gap:4px;
+}
+
+.header > h2 { 
+   font-weight: 700;
+   color : #212B36;
+   font-size: 18px;
+}
+.header > h6 {
+  color: #555555;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
