@@ -88,7 +88,12 @@ function Login() {
 
             <input type="submit" className="login_register_btn" value="Login" />
           </form>
-          {/* <p className='donot_have_account'>Don't have an account? <a href ='#' className='signup'>Sign up</a></p>  */}
+          <p className="donot_have_account">
+            Pos made easy for you?{" "}
+            <a href="#" className="signup">
+              {/* Sign up */}
+            </a>
+          </p>
         </div>
         <div className="login_right">
           {/* <img src={ require('../../images/login_tablet.png') } className='login_image' alt='Login Image' /> */}
