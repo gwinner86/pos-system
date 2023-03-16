@@ -30,7 +30,7 @@ const AddProduct = (data) => {
             <div className='form-group'>
                  <div className='form-control'>
                     <label> Product Name</label>
-                    <input name='name'   type='text' {...register('name', { required: true })} />
+                    <input name='name'   type='text' {... ('name', { required: true })} />
                     {errors.name && <span className='input__errors'>Product name is required</span>}
                  </div>
                  <div className='form-control'>

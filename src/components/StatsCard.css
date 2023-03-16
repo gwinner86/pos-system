@@ -1,4 +1,4 @@
-.stats-card { 
+.stats-card {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,17 +9,17 @@
   background-color: aquamarine;
 }
 
-.stats-text { 
+.stats-text {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  color : #fff;
+  color: #fff;
 }
-.stats-text > h3 { 
-   font-size: 20px;
-   font-weight: bold;
+.stats-text > h3 {
+  font-size: 20px;
+  font-weight: bold;
 }
-.stats-item-icons { 
+.stats-item-icons {
   object-fit: contain;
   width: 40px !important;
   height: 40px !important;
